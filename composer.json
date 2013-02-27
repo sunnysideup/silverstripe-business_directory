@@ -1,5 +1,5 @@
 {
-	"name": "silverstripe/business_directory",
+	"name": "sunnysideup/business_directory",
 	"type": "silverstripe-module",
 	"description": "silverstripe application for listing businesses, focussing on those who are certified in one way or another",
 	"homepage": "http://www.silverstripe-webdevelopment.com",

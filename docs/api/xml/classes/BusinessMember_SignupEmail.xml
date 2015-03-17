@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BusinessMember_SignupEmail" namespace="" name="BusinessMember_SignupEmail" abstract="false" final="false" start="32" end="73">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code/members" file="BusinessMember.php" realpath="/var/www/_modules/business_directory/trunk/code/members/BusinessMember.php" size="2091" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="7313f1badddf2fad6e72f4922c13053a78b09371" relative="code/members/BusinessMember.php"/>
+  <docblock>
+    <description compact="Class used as template to send an email to new members"/>
+    <package value="sapphire"/>
+    <subpackage value="security"/>
+  </docblock>
+  <extends full="Email" namespace="" name="Email"/>
+  <member name="from" type="string" default="''" visibility="protected" line="33"/>
+  <member name="to" type="string" default="'$Email'" visibility="protected" line="34"/>
+  <member name="subject" type="string" default="''" visibility="protected" line="35"/>
+  <member name="body" type="string" default="''" visibility="protected" line="36"/>
+  <constructor name="__construct" start="38" end="64" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="MemberData" start="66" end="72" abstract="false" final="false" static="false" visibility="public"/>
+</class>

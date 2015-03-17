@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="AddBusinessPage_Controller" namespace="" name="AddBusinessPage_Controller" abstract="false" final="false" start="44" end="191">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code" file="AddBusinessPage.php" realpath="/var/www/_modules/business_directory/trunk/code/AddBusinessPage.php" size="7167" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="22ac5f96795eb3f971a80bca4042858d0ffccfae" relative="code/AddBusinessPage.php"/>
+  <extends full="Page_Controller" namespace="" name="Page_Controller"/>
+  <member name="parentPageID" type="integer" default="0" visibility="protected" line="46"/>
+  <method name="NewListingForm" start="48" end="70" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="donewlistingform" start="72" end="112" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}" default="null"/>
+    <parameter name="form" byreference="false" type="{unknown}" default="null"/>
+    <inline>
+      <comment value="add new search record here...." line="73"/>
+    </inline>
+  </method>
+  <method name="createnewbusinesslistingfrompoint" start="114" end="173" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="linkWithExtras" start="175" end="188" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="getVarArray" byreference="false" type="{unknown}"/>
+    <parameter name="action" byreference="false" type="string" default="''"/>
+  </method>
+</class>

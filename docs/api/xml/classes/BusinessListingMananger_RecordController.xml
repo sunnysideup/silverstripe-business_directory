@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BusinessListingMananger_RecordController" namespace="" name="BusinessListingMananger_RecordController" abstract="false" final="false" start="75" end="174">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code/cms" file="BusinessListingManager.php" realpath="/var/www/_modules/business_directory/trunk/code/cms/BusinessListingManager.php" size="4858" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="3106c255703a8ae818121dfe783c48cf1322db12" relative="code/cms/BusinessListingManager.php"/>
+  <extends full="ModelAdmin_RecordController" namespace="" name="ModelAdmin_RecordController"/>
+  <member name="actions_to_keep" type="array" visibility="protected" line="78"/>
+  <method name="EditForm" start="90" end="129" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns a form for editing the attached model">return Form</description>
+    </docblock>
+    <inline>
+      <comment value="in order of appearance" line="94"/>
+      <comment value="$form-&gt;unsetActionByName(&quot;action_doDelete&quot;); - USEFUL TO KEEP" line="95"/>
+      <comment value="$form-&gt;unsetActionByName(&quot;action_doSave&quot;); - USEFUL TO KEEP" line="100"/>
+    </inline>
+  </method>
+  <method name="doSave" start="140" end="167" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Postback action to save a record"/>
+      <param type="array" variable="$data"/>
+      <param type="object" variable="$form">
+        <type full="Form" namespace="" name="Form"/>
+      </param>
+      <param type="object" variable="$request">
+        <type full="SS_HTTPRequest" namespace="" name="SS_HTTPRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="form" byreference="false" type="{unknown}"/>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Behaviour switched on ajax." line="160"/>
+    </inline>
+  </method>
+  <method name="doGoto" start="169" end="171" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="form" byreference="false" type="{unknown}"/>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

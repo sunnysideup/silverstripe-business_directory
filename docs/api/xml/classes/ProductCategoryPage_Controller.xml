@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="ProductCategoryPage_Controller" namespace="" name="ProductCategoryPage_Controller" abstract="false" final="false" start="42" end="44">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code" file="ProductCategoryPage.php" realpath="/var/www/_modules/business_directory/trunk/code/ProductCategoryPage.php" size="913" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="4535e9871466571596142739f3fe3aa41fac23e7" relative="code/ProductCategoryPage.php"/>
+  <extends full="Page_Controller" namespace="" name="Page_Controller"/>
+</class>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BrowseBusinessDecorator" namespace="" name="BrowseBusinessDecorator" abstract="false" final="false" start="3" end="86">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code/decorators" file="BrowseBusinessDecorator.php" realpath="/var/www/_modules/business_directory/trunk/code/decorators/BrowseBusinessDecorator.php" size="2661" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="98cd4cf1a551b62ee292db7aefd4cc96fabbcd10" relative="code/decorators/BrowseBusinessDecorator.php"/>
+  <extends full="SiteTreeDecorator" namespace="" name="SiteTreeDecorator"/>
+  <member name="classes_that_can_have_businesses_as_children" type="array" visibility="protected" line="5"/>
+  <method name="set_classes_that_can_have_businesses_as_children" start="6" end="6" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="a" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_classes_that_can_have_businesses_as_children" start="7" end="7" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="extraStatics" start="9" end="15" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getParentIDs" start="18" end="29" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="BusinessList" start="31" end="40" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getChildIDs" start="42" end="59" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="onBeforeWrite" start="61" end="83" abstract="false" final="false" static="false" visibility="public"/>
+</class>

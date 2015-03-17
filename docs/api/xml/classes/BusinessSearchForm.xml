@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BusinessSearchForm" namespace="" name="BusinessSearchForm" abstract="false" final="false" start="11" end="375">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code/forms" file="BusinessSearchForm.php" realpath="/var/www/_modules/business_directory/trunk/code/forms/BusinessSearchForm.php" size="14652" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="ccc72b946d7ce669b1305a3721108cd78cc02ad2" relative="code/forms/BusinessSearchForm.php"/>
+  <docblock>
+    <description compact="More advanced search form"/>
+    <package value="business_directory"/>
+  </docblock>
+  <extends full="SearchForm" namespace="" name="SearchForm"/>
+  <constructor name="__construct" start="16" end="75" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="the constructor of a Simple/basic SearchForm"/>
+    </docblock>
+    <parameter name="controller" byreference="false" type="{unknown}"/>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="fields" byreference="false" type="{unknown}" default="null"/>
+    <parameter name="actions" byreference="false" type="{unknown}" default="null"/>
+    <inline>
+      <comment value="Need this before we call parent::_construct" line="17"/>
+    </inline>
+  </constructor>
+  <method name="FormMethod" start="77" end="79" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="forTemplate" start="81" end="83" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getResults" start="87" end="183" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="numPerPage" byreference="false" type="integer" default="10"/>
+    <inline>
+      <comment value="Build sort by - how does relevance work??" line="168"/>
+    </inline>
+  </method>
+  <method name="getSearchQuery" start="185" end="242" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="Debug::show($query);" line="239"/>
+    </inline>
+  </method>
+  <method name="searchEngine" start="248" end="309" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="The core search engine, used by this class and its subclasses to do fun stuff.">Searches Businesses.</description>
+    </docblock>
+    <parameter name="keywords" byreference="false" type="{unknown}"/>
+    <parameter name="numPerPage" byreference="false" type="integer" default="10"/>
+    <parameter name="sortBy" byreference="false" type="string" default="&quot;Relevance DESC&quot;"/>
+    <parameter name="extraFilter" byreference="false" type="string" default="&quot;&quot;"/>
+    <parameter name="booleanSearch" byreference="false" type="{unknown}" default="false"/>
+    <parameter name="invertedMatch" byreference="false" type="{unknown}" default="false"/>
+    <inline>
+      <comment value="$fileFilter = '';" line="249"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$keywords = addslashes($keywords);" line="250"/>
+      <comment value="We make the relevance search by converting a boolean mode search into a normal one" line="267"/>
+      <comment value="There's no need to do all that joining" line="279"/>
+      <comment value="However - now we end up joining lots again!" line="280"/>
+      <comment value="die($fullQuery);" line="296"/>
+      <comment value="Debug::show($fullQuery);" line="297"/>
+    </inline>
+  </method>
+  <method name="buildCertificationSubquery" start="311" end="335" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="prodCat" byreference="false" type="{unknown}"/>
+    <parameter name="certType" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getLocationFields" start="337" end="373" abstract="false" final="false" static="false" visibility="private"/>
+</class>

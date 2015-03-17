@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BusinessPage_Controller" namespace="" name="BusinessPage_Controller" abstract="false" final="false" start="471" end="566">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code" file="BusinessPage.php" realpath="/var/www/_modules/business_directory/trunk/code/BusinessPage.php" size="16820" time="2015-03-14T10:22:55+13:00" unixtime="1426281775" sha1="902a8f6a0b0f8226040ef2596cc8aa69d2068e03" relative="code/BusinessPage.php"/>
+  <extends full="Page_Controller" namespace="" name="Page_Controller"/>
+  <method name="init" start="474" end="477" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="index" start="483" end="503" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="O DO: this contains map related stuff... which should be removed"/>
+    </docblock>
+    <parameter name="action" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Debug::show($action);" line="484"/>
+      <comment value="Debug::show($this-&gt;owner-&gt;isAjax);" line="485"/>
+      <comment value="$data = DataObject::get_by_id('BusinessPage', (int)$action['ID']);" line="487"/>
+    </inline>
+  </method>
+  <method name="getGeoPoints" start="508" end="512" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="returns the Google Map Location points for this business"/>
+    </docblock>
+  </method>
+  <method name="EditForm" start="517" end="526" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="returns a form to edit this page"/>
+    </docblock>
+  </method>
+  <method name="savedata" start="531" end="547" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="saves the data submitted by the EditForm form"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}" default="null"/>
+    <parameter name="form" byreference="false" type="{unknown}" default="null"/>
+  </method>
+  <method name="HasContacDetails" start="550" end="564" abstract="false" final="false" static="false" visibility="public"/>
+</class>

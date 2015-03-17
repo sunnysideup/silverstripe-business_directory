@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BusinessMember" namespace="" name="BusinessMember" abstract="false" final="false" start="9" end="25">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code/members" file="BusinessMember.php" realpath="/var/www/_modules/business_directory/trunk/code/members/BusinessMember.php" size="2091" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="7313f1badddf2fad6e72f4922c13053a78b09371" relative="code/members/BusinessMember.php"/>
+  <docblock>
+    <description compact="BusinessMemberRole">This decorator adds the needed fields and methods to the <link xmlns="http://xml.phpdox.net/src" value="Member"/>object.
+</description>
+  </docblock>
+  <extends full="DataObjectDecorator" namespace="" name="DataObjectDecorator"/>
+  <method name="extraStatics" start="17" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Define extra database fields">Return an map where the keys are db, has_one, etc, and the values are
+additional fields/relations to be defined</description>
+    </docblock>
+  </method>
+</class>

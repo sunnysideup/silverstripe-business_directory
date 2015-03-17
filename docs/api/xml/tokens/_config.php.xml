@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../.." file="_config.php" realpath="/var/www/_modules/business_directory/trunk/_config.php" size="519" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="71c45ee7da60235bed7191a5c30e2022f5c3b573" relative="_config.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_STRING">Member</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">add_extension</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Member'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'BusinessMember'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_STRING">DataObject</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">add_extension</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'SiteTree'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'BrowseBusinessDecorator'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="7">
+    <token name="T_STRING">Object</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">add_extension</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'ContentController'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'BrowseBusinessDecorator_Controller'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_COMMENT">//=============================== START business_directory =====================================</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">//BrowseBusinessDecorator::get_classes_that_can_have_businesses_as_children(array("BusinessListingPage"));</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">//=============================== END business_directory =====================================</token>
+  </line>
+  <line no="12"/>
+</source>

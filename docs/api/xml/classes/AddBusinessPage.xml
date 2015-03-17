@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="AddBusinessPage" namespace="" name="AddBusinessPage" abstract="false" final="false" start="25" end="42">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code" file="AddBusinessPage.php" realpath="/var/www/_modules/business_directory/trunk/code/AddBusinessPage.php" size="7167" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="22ac5f96795eb3f971a80bca4042858d0ffccfae" relative="code/AddBusinessPage.php"/>
+  <docblock>
+    <description compact="Steps:">1. go to page
+2. enter name and location
+3. creatge page
+4. allow edits (move marker on map, edit details)
+
+MEMBERSHIP
+Each page needs to be confirmed with an email click.  Before this is done, the page
+"ShowInSearch" + ShowInMenus = false
+Each person creates an account, if they are not logged in yet.
+If they try to create an account with an existing email then they are asked to log in.
+
+LOCATION
+It is possible to go to this page with preset variables (e.g. they did a search and there is nothing there...)
+You can only come from this page from the "future" parent page.</description>
+  </docblock>
+  <extends full="Page" namespace="" name="Page"/>
+  <member name="icon" type="string" default="&quot;business_directory/images/treeicons/AddBusinessPage&quot;" visibility="public" line="30">
+    <docblock>
+      <description compact="Standard SS static"/>
+    </docblock>
+  </member>
+  <method name="canCreate" start="32" end="34" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="member" byreference="false" type="{unknown}" default="null"/>
+  </method>
+  <method name="getCMSFields" start="36" end="40" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="cms" byreference="false" type="{unknown}"/>
+  </method>
+</class>

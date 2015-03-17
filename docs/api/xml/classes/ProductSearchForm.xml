@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="ProductSearchForm" namespace="" name="ProductSearchForm" abstract="false" final="false" start="11" end="228">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code/forms" file="ProductSearchForm.php" realpath="/var/www/_modules/business_directory/trunk/code/forms/ProductSearchForm.php" size="9040" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="db3acc6d4ebb2c25db0598d9410d9ed1fd7b3060" relative="code/forms/ProductSearchForm.php"/>
+  <docblock>
+    <description compact="More advanced search form"/>
+    <package value="business_directory"/>
+  </docblock>
+  <extends full="SearchForm" namespace="" name="SearchForm"/>
+  <constructor name="__construct" start="16" end="60" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="the constructor of a Simple/basic SearchForm"/>
+    </docblock>
+    <parameter name="controller" byreference="false" type="{unknown}"/>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="fields" byreference="false" type="{unknown}" default="null"/>
+    <parameter name="actions" byreference="false" type="{unknown}" default="null"/>
+  </constructor>
+  <method name="FormMethod" start="62" end="64" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="forTemplate" start="66" end="68" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getResults" start="72" end="138" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="numPerPage" byreference="false" type="integer" default="10"/>
+    <inline>
+      <comment value="Debug::show($data);" line="75"/>
+      <comment value="Debug::show($_POST);" line="76"/>
+      <comment value="if($data['+']) $keywords .= &quot; +&quot; . ereg_replace(&quot; +&quot;, &quot; +&quot;, trim($data['+']));" line="78"/>
+      <comment value="if($data['quote']) $keywords .= ' &quot;' . $data['quote'] . '&quot;';" line="79"/>
+      <comment value="if($data['any']) $keywords .= ' ' . $data['any'];" line="80"/>
+      <comment value="if($data['-']) $keywords .= &quot; -&quot; . ereg_replace(&quot; +&quot;, &quot; -&quot;, trim($data['-']));" line="81"/>
+      <comment value="This means that they want to just find pages where there's *no* match" line="84"/>
+      <comment value="if($keywords[0] == '-') {" line="86"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$keywords = $data['-'];" line="87"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$invertedMatch = true;" line="88"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="89"/>
+      <comment value="Create filters for certifications" line="92"/>
+      <comment value="Create filter for locations" line="109"/>
+      <comment value="Build sort by - how does relevance work??" line="123"/>
+    </inline>
+  </method>
+  <method name="getSearchQuery" start="140" end="145" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="searchEngine" start="151" end="226" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="The core search engine, used by this class and its subclasses to do fun stuff.">Searches Products.</description>
+    </docblock>
+    <parameter name="keywords" byreference="false" type="{unknown}"/>
+    <parameter name="numPerPage" byreference="false" type="integer" default="10"/>
+    <parameter name="sortBy" byreference="false" type="string" default="&quot;Relevance DESC&quot;"/>
+    <parameter name="extraFilter" byreference="false" type="string" default="&quot;&quot;"/>
+    <parameter name="booleanSearch" byreference="false" type="{unknown}" default="false"/>
+    <parameter name="invertedMatch" byreference="false" type="{unknown}" default="false"/>
+    <inline>
+      <comment value="$fileFilter = '';" line="152"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$keywords = addslashes($keywords);" line="153"/>
+      <comment value="We make the relevance search by converting a boolean mode search into a normal one" line="170"/>
+      <comment value="There's no need to do all that joining" line="182"/>
+      <comment value="However - now we end up joining lots again!" line="183"/>
+      <comment value="die($fullQuery);" line="199"/>
+      <comment value="Debug::show($fullQuery);" line="200"/>
+      <comment value="Debug::show($doSet);" line="211"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BrowseBusinessDecorator_Controller" namespace="" name="BrowseBusinessDecorator_Controller" abstract="false" final="false" start="88" end="99">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code/decorators" file="BrowseBusinessDecorator.php" realpath="/var/www/_modules/business_directory/trunk/code/decorators/BrowseBusinessDecorator.php" size="2661" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="98cd4cf1a551b62ee292db7aefd4cc96fabbcd10" relative="code/decorators/BrowseBusinessDecorator.php"/>
+  <extends full="Extension" namespace="" name="Extension"/>
+  <method name="filterforproductcategory" start="91" end="93" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="filterforcategory" start="95" end="97" abstract="false" final="false" static="false" visibility="public"/>
+</class>

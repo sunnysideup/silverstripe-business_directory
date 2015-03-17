@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="CertificationPage" namespace="" name="CertificationPage" abstract="false" final="false" start="8" end="69">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code" file="CertificationPage.php" realpath="/var/www/_modules/business_directory/trunk/code/CertificationPage.php" size="1629" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="52a3a8ee71cc4ba9183a2a0ccc869b0dd5cac1fb" relative="code/CertificationPage.php"/>
+  <docblock>
+    <description compact="ProductPage.php: Sub-class of Page Contains info about a product"/>
+    <created value="14/10/2008"/>
+  </docblock>
+  <extends full="Page" namespace="" name="Page"/>
+  <member name="icon" type="string" default="&quot;business_directory/images/treeicons/CertificationPage&quot;" visibility="public" line="13">
+    <docblock>
+      <description compact="tandard SS Static"/>
+    </docblock>
+  </member>
+  <member name="db" type="array" visibility="public" line="18">
+    <docblock>
+      <description compact="tandard SS Static"/>
+    </docblock>
+  </member>
+  <member name="has_one" type="array" visibility="public" line="25">
+    <docblock>
+      <description compact="tandard SS Static"/>
+    </docblock>
+  </member>
+  <member name="belongs_many_many" type="array" visibility="public" line="32">
+    <docblock>
+      <description compact="tandard SS Static"/>
+    </docblock>
+  </member>
+  <member name="can_be_root" type="{unknown}" default="false" visibility="public" line="40">
+    <docblock>
+      <description compact="tandard SS Static"/>
+    </docblock>
+  </member>
+  <method name="getCMSFields" start="45" end="55" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="tandard SS Method"/>
+    </docblock>
+    <parameter name="cms" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="NumberOfBusinesses" start="61" end="63" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="returns the number of businesses that carry this certification.">return Integer</description>
+    </docblock>
+  </method>
+  <method name="requireDefaultRecords" start="65" end="67" abstract="false" final="false" static="false" visibility="public"/>
+</class>

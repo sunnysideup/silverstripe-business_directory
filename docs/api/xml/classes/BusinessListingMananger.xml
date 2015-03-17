@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BusinessListingMananger" namespace="" name="BusinessListingMananger" abstract="false" final="false" start="10" end="49">
+  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code/cms" file="BusinessListingManager.php" realpath="/var/www/_modules/business_directory/trunk/code/cms/BusinessListingManager.php" size="4858" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="3106c255703a8ae818121dfe783c48cf1322db12" relative="code/cms/BusinessListingManager.php"/>
+  <docblock>
+    <description compact="manage listings and related items"/>
+  </docblock>
+  <extends full="ModelAdmin" namespace="" name="ModelAdmin"/>
+  <member name="url_segment" type="string" default="'listings'" visibility="public" line="12"/>
+  <member name="menu_title" type="string" default="'Listings'" visibility="public" line="14"/>
+  <member name="menu_priority" type="integer" default="3" visibility="public" line="16"/>
+  <member name="managed_models" type="array" visibility="public" line="20"/>
+  <method name="set_managed_models" start="21" end="21" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="add_managed_model" start="22" end="22" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="s" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="remove_managed_model" start="23" end="31" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="s" byreference="false" type="{unknown}"/>
+  </method>
+  <member name="collection_controller_class" type="string" default="'BusinessListingMananger_CollectionController'" visibility="public" line="33"/>
+  <member name="record_controller_class" type="string" default="'BusinessListingMananger_RecordController'" visibility="public" line="35"/>
+  <method name="init" start="37" end="39" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="urlSegmenter" start="46" end="48" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="return String (URLSegment)"/>
+    </docblock>
+  </method>
+</class>

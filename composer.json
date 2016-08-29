@@ -3,8 +3,10 @@
     "type": "silverstripe-module",
     "description": "silverstripe application for listing businesses, focussing on those who are certified in one way or another",
     "keywords": [
-        "business_directory",
-        "silverstripe"
+        "Silverstripe-CMS",
+        "CMS",
+        "Silverstripe",
+        "business_directory"
     ],
     "license": "Sunny Side Up (BSD-3-Clause and CUSTOM)",
     "authors": [
@@ -16,8 +18,9 @@
     ],
     "require": {
         "silverstripe/framework": "~2.4",
-        "silverstripe/geobrowser": "dev-master",
-        "silverstripe/googlemap": "dev-master"
+        "silverstripe/geobrowser": "*",
+        "silverstripe/googlemap": "*",
+        "silverstripe/cms": "~2.4"
     },
     "extra": {
         "installer-name": "business_directory"

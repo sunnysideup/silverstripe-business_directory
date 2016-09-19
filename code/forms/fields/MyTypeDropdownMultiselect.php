@@ -7,7 +7,8 @@
  *
  * @deprecated 2.3 Misleading naming
  */
-class MyTypeDropdownMultiselect extends MyTypeDropdown {
+class MyTypeDropdownMultiselect extends MyTypeDropdown
+{
   
   /**
    * @var string $titleFieldName The name of the DataObject property used for the dropdown options
@@ -17,36 +18,39 @@ class MyTypeDropdownMultiselect extends MyTypeDropdown {
   /**
    * @param string $name
    * @param string $title
-   * @param string $className 
+   * @param string $className
    */
-  function __construct( $name, $title, $className, $value = null, $form = null, $emptyString = null, $extraFields = null, $size = 4) {
-    $this->size = $size;
+  public function __construct($name, $title, $className, $value = null, $form = null, $emptyString = null, $extraFields = null, $size = 4)
+  {
+      $this->size = $size;
 
-    parent::__construct( $name, $title, $className, $value, $form, $emptyString, $extraFields );
+      parent::__construct($name, $title, $className, $value, $form, $emptyString, $extraFields);
   }
   
   /**
    * Returns a <select> tag containing all the appropriate <option> tags
    * Overriding this to make it multiselect & use size property
    */
-  function Field() {
-    $classAttr = '';
-    $options = '';
-    if($extraClass = trim($this->extraClass())) {
-      $classAttr = "class=\"$extraClass\"";
-    }
-    if($this->source) foreach($this->source as $value => $title) {
-      $selected = $value == $this->value ? " selected=\"selected\"" : "";
-      if($selected && $this->value != 0) {
-        $this->isSelected = true;
+  public function Field()
+  {
+      $classAttr = '';
+      $options = '';
+      if ($extraClass = trim($this->extraClass())) {
+          $classAttr = "class=\"$extraClass\"";
       }
-      $options .= "<option$selected value=\"$value\">$title</option>";
-    }
+      if ($this->source) {
+          foreach ($this->source as $value => $title) {
+              $selected = $value == $this->value ? " selected=\"selected\"" : "";
+              if ($selected && $this->value != 0) {
+                  $this->isSelected = true;
+              }
+              $options .= "<option$selected value=\"$value\">$title</option>";
+          }
+      }
   
-    $id = $this->id();
-    $disabled = $this->disabled ? " disabled=\"disabled\"" : "";
+      $id = $this->id();
+      $disabled = $this->disabled ? " disabled=\"disabled\"" : "";
     
-    return "<select $classAttr $disabled name=\"$this->name\" id=\"$id\" size=\"$this->size\" multiple=\"multiple\">$options</select>";
+      return "<select $classAttr $disabled name=\"$this->name\" id=\"$id\" size=\"$this->size\" multiple=\"multiple\">$options</select>";
   }
 }
-?>

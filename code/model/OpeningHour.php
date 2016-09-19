@@ -1,41 +1,42 @@
 <?php
 
 
-class OpeningHour extends DataObject {
+class OpeningHour extends DataObject
+{
+    public static $db = array(
+        "FromDay" => "Int",
+        "UntilDay" => "Int",
+        "FromHour" => "Int",
+        "UntilHour" => "Int",
+        "FromMinutes" => "Int",
+        "UntilMinutes" => "Int",
+        "Note" => "Varchar",
+        "TimeZone" => "Varchar"
+    );
 
-	public static $db = array(
-		"FromDay" => "Int",
-		"UntilDay" => "Int",
-		"FromHour" => "Int",
-		"UntilHour" => "Int",
-		"FromMinutes" => "Int",
-		"UntilMinutes" => "Int",
-		"Note" => "Varchar",
-		"TimeZone" => "Varchar"
-	);
+    protected static $days = array(
+        1 => "Monday",
+        2 => "Tuesday",
+        3 => "Wednesday",
+        4 => "Thursday",
+        5 => "Friday",
+        6 => "Saturday",
+        7 => "Sunday"
+    );
+    public static function get_days()
+    {
+        return self::$days;
+    }
 
-	protected static $days = array(
-		1 => "Monday",
-		2 => "Tuesday",
-		3 => "Wednesday",
-		4 => "Thursday",
-		5 => "Friday",
-		6 => "Saturday",
-		7 => "Sunday"
-	);
-		static function get_days() {return self::$days;}
+    public function NextOpeningTime()
+    {
+    }
 
-	function NextOpeningTime() {
+    public function IsOpenNow()
+    {
+    }
 
-	}
-
-	function IsOpenNow(){
-
-	}
-
-	function OpeningHoursForNextWeek(){
-
-	}
-
-	
+    public function OpeningHoursForNextWeek()
+    {
+    }
 }

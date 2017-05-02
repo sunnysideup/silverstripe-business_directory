@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="CertificationPage_Controller" namespace="" name="CertificationPage_Controller" abstract="false" final="false" start="71" end="73">
-  <file path="/var/www/_modules/business_directory/trunk/docs/en/phpdox/../../../code" file="CertificationPage.php" realpath="/var/www/_modules/business_directory/trunk/code/CertificationPage.php" size="1629" time="2015-03-14T10:22:54+13:00" unixtime="1426281774" sha1="52a3a8ee71cc4ba9183a2a0ccc869b0dd5cac1fb" relative="code/CertificationPage.php"/>
-  <extends full="Page_Controller" namespace="" name="Page_Controller"/>
-</class>

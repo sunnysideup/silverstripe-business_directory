@@ -15,7 +15,7 @@
 
  * [Developer Docs](docs/en/INDEX.md)
  * [User Guide](docs/en/userguide.md)
- * [API Docs](http://docs.ssmods.com/sunnysideup/business_directory)
+ * [API Docs](http://docs.ssmods.com/sunnysideup/business_directory/classes.xhtml)
 
 ## Requirements
 
